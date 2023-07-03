@@ -1,0 +1,542 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Open Sans, Helvetica, sans-serif;
+  background-color: #FFFDF9;
+  color: #651835;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+article {
+  flex: 1;
+}
+
+/*Styling for the headings on each page.*/
+h2 {
+  font-family: Lora, serif;
+  text-decoration: underline;
+  padding: 2% 10% 1% 10%;
+}
+
+/*Styling for the index page.*/
+
+.keyart {
+  max-width: 90%;
+  padding-top: 8%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+}
+
+.tagline {
+  text-align: center;
+  color: #A14470;
+  padding: 2%;
+}
+
+.tagline .taglineinside {
+  display: inline-block;
+  text-align: left;
+}
+
+.quote, .quotesource {
+  line-height: 5%;
+}
+
+@media screen and (max-width: 400px) {
+  div.tagline {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 799px) and (min-width: 401px) {
+  div.tagline {
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  div.tagline {
+    font-size: 18px;
+  }
+}
+
+.linkingbutton {
+  border: solid 1px #ab416a;
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #8e5a72;
+  background-color: #fbd6d6;
+  padding: 15px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.linkingbutton:hover {
+  background-color: #eab1b1;
+  color: #482133;
+}
+
+/*Styling for text-based pages.*/
+.infotext {
+  font-size: 20px;
+  line-height: 160%;
+  contain: layout;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.infotextquote {
+  font-style: italic;
+  font-size: 20px;
+  line-height: 160%;
+  contain: layout;
+  margin: 0% 10%;
+}
+
+/*This is mostly for text that needs to be italicised. For titles and non-English words as a part of text.*/
+.specialtext {
+  font-style: italic;
+}
+
+/*Navbar styling. Referenced from W3Schools.*/
+.navbar {
+  background-color: #FFFDF9;
+  overflow: hidden;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+.navbar > * {
+	margin: 0 10px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #651835;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.active {
+  background-color: #e7b6b6 !important;
+  color: #651835;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbutton {
+  font-size: 18px;
+  outline: none;
+  border: none;
+  color: #651835;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  border-radius: 8px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FBF9F9;
+  min-width: 60px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #651835;
+  text-decoration: none;
+  font-size: 0.98em;
+  display: block;
+  text-align: left;
+  padding: 12px 16px;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbutton {
+  background-color: #f2e0dc;
+}
+
+.dropdown-content a:hover {
+  background-color: #F8F0EE;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+
+  .navbar a,
+  .dropdown .dropbutton {
+    display: none;
+  }
+
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+  }
+
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .navbar.responsive .dropdown {
+    float: none;
+  }
+
+  .navbar.responsive .dropdown-content {
+    position: relative;
+  }
+
+  .navbar.responsive .dropdown .dropbutton {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/*Footer styling.*/
+footer {
+  height: 60px;
+  padding: 0 10px;
+  list-style: none;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF5EE;
+}
+
+.footertext {
+  color: #d9919c;
+  font-size: 15px;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  display: inline;
+  color: #c17883;
+}
+
+footer a {
+  margin: 0 15px;
+  color: inherit;
+  text-decoration: none;
+}
+
+footer a:hover {
+  padding-bottom: 5px;
+  box-shadow: inset 0 -2px 0 0 #564343;
+}
+
+
+/*Styling for the informative text that appears on the Cast List page.*/
+.castpageinfo {
+  font-size: 16px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.maintext {
+  font-weight: bold;
+}
+
+.castpageextras {
+  text-align: center;
+}
+
+/*Toggle button on the Cast List page styling. Heavily referenced from W3Schools.*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.switchinfo {
+  margin-left: 10%;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #DEDEDE;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #FFDAB9;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #FFDAB9;
+}
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*Cast gallery styling.*/
+.castgallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-left: 9em;
+  margin-top: 30px;
+}
+
+.castgroup {
+  margin: 10px;
+}
+
+.castgroup .title {
+  font-family: Lora, serif;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.gallery .cast span {
+  display: block;
+}
+
+.nonENdesc {
+  font-style: italic;
+}
+
+.gallery {
+  display: flex;
+  gap: 5px;
+  margin: 10px;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+}
+
+.gallery img {
+  cursor: pointer;
+}
+
+.cast {
+  text-align: center;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  width: 180px;
+  padding: 1px;
+}
+
+.cast:hover {
+  border-color: lightpink;
+}
+
+.name {
+  font-weight: bold;
+}
+
+/*Styling for the pop-up box, a modal, that gives more details for each character.*/
+#modal {
+  display: none;
+}
+
+#modal.show {
+  display: table;
+}
+
+.details {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*Content displayed in the modal.*/
+.details-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 3px solid #f1b7b7;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(240, 125, 125, 0.2), 0 6px 20px 0 rgba(248, 125, 125, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+.details-header {
+  background-color: #ffeeee;
+  padding: 20px;
+}
+
+.details-name {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.details-gender {
+  padding: 2px 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.details-body {
+  padding: 20px 30px;
+  background-color: #FFFAFA;
+  min-height: 400px;
+}
+
+.biotext {
+  line-height: 140%;
+  font-size: 18px;
+}
+
+/*Close button for the modal.*/
+.close {
+  color: rgb(131, 67, 67);
+  float: right;
+  margin-right: 1%;
+  margin-top: 1%;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #e1aaaa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Styling for the image on the Character Relations page.*/
+.relationschart {
+  max-width: 700px;
+  max-height: 500px;
+  margin-left: 6%;
+}
+
+/*Styling for the links on the Read page.*/
+.comiclinks {
+  margin-left: 10%;
+  float: left;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #651835;
+  background-color: #f5dede;
+  padding: 8px 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header-component></header-component>
+
+    <main>
+        <h2>CAST</h2>
+
+        <aside>
+            <p class="castpageinfo maintext">Hovering over character icons gives a small surprise! You can also click on
+                an icon to learn more about the character.</p>
+            <p class="castpageinfo">! Please note that certain images on this page may feature very mild unsettling
+                horror elements (no blood or gore). If you are uncomfortable with such images, you can turn off the
+                flipping feature by clicking on the button located just below this paragraph.</p>
+        </aside>
+
+        <div>
+            <span class="switchinfo">OFF</span>
+            <label class="switch">
+                <input id="disableFlip" type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+            <span>ON</span>
+        </div>
+
+        <div class="castgallery">
+            <section class="castgroup">
+                <div class="title">MAIN</div>
+                <div id="mainCast" class="gallery"></div>
+            </section>
+            <section class="castgroup">
+                <div class="title">SUPPORTING</div>
+                <div id="supportingCast" class="gallery"></div>
+            </section>
+            <section class="castgroup">
+                <div class="title">CURIOUS COLLEAGUES</div>
+                <div id="colleagueCast" class="gallery"></div>
+            </section>
+            <section class="castgroup">
+                <div class="title">THE CAFÉ</div>
+                <div id="cafeCast" class="gallery"></div>
+            </section>
+        </div>
+
+        <p class="castpageextras"> & more...</p>
+        <p class="castpageextras">additional credit: Jasper features <a href="https://eu.finalfantasyxiv.com/lodestone/character/40906698/">Egg</a> as a guest artist.</p>
+
+        <div id="modal" class="details">
+            <div class="details-content">
+                <div class="details-header">
+                    <span class="close">&times;</span>
+                    <div class="details-name"></div>
+                    <div class="details-gender"></div>
+                </div>
+                <div class="details-body"></div>
+            </div>
+        </div>
+
+    </main>
+
+    </main>
+    <footer-component></footer-component>
+</body>
+
+</html>
